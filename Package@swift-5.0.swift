@@ -4,7 +4,7 @@ import PackageDescription
 
 let pkg = Package(name: "PMKFoundation")
 pkg.products = [
-    .library(name: "PMKFoundation", targets: ["PMKFoundation"]),
+    .library(name: "PMKFoundation", type: .dynamic, targets: ["PMKFoundation"]),
 ]
 pkg.dependencies = [
     .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.8.3")
